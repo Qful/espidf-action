@@ -1,0 +1,17 @@
+name: CI
+
+on: [push]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    name: Test the action
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Action execution
+        uses: ./
+        with:
+          esp_idf_version: 'latest'
+
