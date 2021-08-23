@@ -1,4 +1,4 @@
-name: 'ESP-IDF v4.x installer'
+name: 'ESP-IDF installer'
 description: 'GitHub Action to install Espressif IoT Development Framework v4.x for building ESP32 code.'
 
 branding:
@@ -9,7 +9,7 @@ inputs:
   esp_idf_version:
     description: 'Required ESP-IDF version (v4.1, release/v4.2, ...)'
     required: false
-    default: 'v4.1'
+    default: 'v4.2'
 
 runs:
   using: "composite"

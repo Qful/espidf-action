@@ -54,12 +54,3 @@ jobs:
           idf.py size
 ```
 
-## About
-
-It was tested in the official Ubuntu Focal Docker container and it contains some minor extra steps not really needed for the GitHub-hosted Ubuntu 20.04 LTS runner, like the installation of `tzdata` and `python3-libusb1`. I left them for completeness if more tests are needed.
-
-Version 2 of this action does not build the ESP32 code, like version 1 has done it, to allow custom build steps.
-
-## License
-
-This repository is licensed with the [MIT License](LICENSE).
